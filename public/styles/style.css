@@ -1,0 +1,58 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+    color: #5a5a5a;
+}
+
+/* SIGN UP ---------------------------------------------------- */
+.signup-main {
+    min-height: 100vh;
+    background: url("https://images6.alphacoders.com/107/thumb-1920-1072679.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* form container */
+#formDiv {
+    border-radius: 10px;
+    opacity: 0.9;
+    height: 500px;
+}
+
+.opaque {
+    opacity: 1;
+}
+
+/* ROSTER ---------------------------------------------------- */
+.roster-main {
+    height: 100vh;
+    background: url("https://i.redd.it/uky9yi20i9m41.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* columns */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+/* TOURNAMENT ----------------------------------------------- */
+.tournament-main {
+    height: 100vh;
+    background: url("https://img.menzig.tech/a/1000/1565-h1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
