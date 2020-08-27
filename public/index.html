@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,82 +20,96 @@
 
 <body class="overflow-hidden">
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-darker border-bottom border-danger">
-        <div class="container">
-            <a class="navbar-brand text-danger" href="/">
-                <img src="images/favicon.ico" width="30" height="30" alt="" style="border-radius: 25%;">
-                Valtourneys
-            </a>
-            <ul class="navbar-nav float-left">
-                <li class="nav-item">
-                    <a class="nav-link" href="signin.html">SIGN IN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="roster.html">ROSTER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darker border-bottom border-danger">
+            <div class="container">
+                <a class="navbar-brand text-danger" href="/">
+                    <img src="images/favicon.ico" width="30" height="30" alt="" style="border-radius: 25%;">
+                    Valtourneys
+                </a>
+                <ul class="navbar-nav float-left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html">SIGN IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roster.html">ROSTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<main id="homeMain">
-    <section class="jumbotron jumbotron-fluid text-center text-danger bg-darker almost-opaque mb-0">
-        <div class="container">
-            <h1>Valtourneys</h1>
-            <p class="lead font-weight-normal">Register for Valorant tournaments quickly and easily on Valtourneys</p>
-            <p>
-                <a href="signin.html" class="btn btn-danger my-2">Sign in</a>
-            </p>
+    <main id="homeMain">
+        <section class="jumbotron jumbotron-fluid text-center text-danger bg-darker almost-opaque mb-0">
+            <div class="container">
+                <h1>Valtourneys</h1>
+                <p class="lead font-weight-normal">Register for Valorant tournaments quickly and easily on Valtourneys
+                </p>
+                <p>
+                    <a href="signin.html" class="btn btn-danger my-2">Sign in</a>
+                </p>
 
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section class="py-5 bg-dark almost-opaque border-danger border-top">
-        <div class="container">
-            <div class="row">
-                <div id="formDiv" class="col-md-6 offset-3 bg-darker almost-opaque pb-4 my-1 rounded border border-secondary">
+        <section class="py-5 bg-dark almost-opaque border-danger border-top">
+            <div class="container">
+                <div class="row">
+                    <div id="formDiv"
+                        class="col-md-6 offset-3 bg-darker almost-opaque pb-4 my-1 rounded border border-secondary">
 
-                    <h3 class="text-center mt-4 text-danger opaque"><b>User Registration</b></h3>
+                        <h3 class="text-center mt-4 text-danger opaque"><b>User Registration</b></h3>
 
-                    <p class="text-center"><em class="text-danger">We request your email only to send you important
-                        information and notifications about your tournaments. Your password is safely stored with
-                        encryption so that it is unable to be retrieved in raw text by anyone, including the site's
-                        developers.</em>
-                    </p>
+                        <p class="text-center"><em class="text-danger">We request your email only to send you important
+                                information and notifications about your tournaments. Your password is safely stored
+                                with
+                                encryption so that it is unable to be retrieved in raw text by anyone, including the
+                                site's
+                                developers.</em>
+                        </p>
 
-                    <form class="mt-5" action="/signup" method="post" autocomplete="off">
-                        <div class="form-group mt-4">
-                            <input class="form-control" type="text" placeholder="Enter First Name" name="firstName">
-                        </div>
+                        <form class="mt-5" action="/signup" method="post" autocomplete="off">
+                            <div class="form-group mt-4">
+                                <input class="form-control" type="text" placeholder="Enter First Name" name="firstName"
+                                    required>
+                            </div>
 
-                        <div class="form-group mt-4">
-                            <input class="form-control" type="text" placeholder="Enter Last Name" name="lastName">
-                        </div>
+                            <div class="form-group mt-4">
+                                <input class="form-control" type="text" placeholder="Enter Last Name" name="lastName"
+                                    required>
+                            </div>
 
-                        <div class="form-group mt-4">
-                            <input class="form-control" type="email" placeholder="Enter Email" name="email">
-                        </div>
+                            <div class="form-group mt-4">
+                                <input class="form-control" type="email" placeholder="Enter Email" name="email"
+                                    required>
+                                <p id="emailTakenMessage" class="text-danger font-weight-bold mb-0 d-none">The email
+                                    you entered is taken.</p>
+                            </div>
 
-                        <div class="form-group mt-4">
-                            <input class="form-control" type="password" placeholder="Enter Password" name="password">
-                        </div>
+                            <div id="passwordDiv" class="form-group mt-4">
+                                <input class="form-control" type="password" placeholder="Enter Password" name="password"
+                                    required>
+                            </div>
 
-                        <button class="btn btn-danger btn-lg px-4 mt-4" type="submit">Sign Up</button>
-                    </form>
+                            <button class="btn btn-danger btn-lg px-4 mt-4" type="submit">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="scripts/jquery.min.js"></script>
-<script src="scripts/popper.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="scripts/signup-failure.js"></script>
 </body>
+
 </html>

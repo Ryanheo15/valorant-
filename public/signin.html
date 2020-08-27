@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,57 +20,59 @@
 
 <body class="overflow-hidden">
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-darker border-bottom border-danger">
-        <div class="container">
-            <a class="navbar-brand text-danger" href="/">
-                <img src="images/favicon.ico" width="30" height="30" alt="" style="border-radius: 25%;">
-                Valtourneys
-            </a>
-            <ul class="navbar-nav float-left">
-                <li class="nav-item">
-                    <a class="nav-link active" href="signin.html">SIGN IN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="roster.html">ROSTER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<main class="signin-main pt-5 opaque">
-    <section class="container text-center">
-
-        <div class="row mt-5">
-            <div class="col-md-6 offset-3 bg-darker almost-opaque px-5 pb-5 pt-4 rounded-lg border border-dark">
-
-                <h3 class="text-center mt-4 text-danger opaque"><b>Sign in to begin registering for tournaments</b></h3>
-
-                <form class="mt-5" action="/signup" method="post" autocomplete="off">
-                    <div class="form-group mt-4">
-                        <input class="form-control" type="email" placeholder="Enter Email" name="email">
-                    </div>
-
-                    <div class="form-group mt-4">
-                        <input class="form-control" type="password" placeholder="Enter Password" name="password">
-                    </div>
-
-                    <button class="btn btn-danger btn-lg px-4 mt-4" type="submit">Sign In</button>
-                </form>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darker border-bottom border-danger">
+            <div class="container">
+                <a class="navbar-brand text-danger" href="/">
+                    <img src="images/favicon.ico" width="30" height="30" alt="" style="border-radius: 25%;">
+                    Valtourneys
+                </a>
+                <ul class="navbar-nav float-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signin.html">SIGN IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roster.html">ROSTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    </header>
 
-    </section>
-</main>
+    <main class="signin-main pt-5 opaque">
+        <section class="container text-center">
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="scripts/jquery.min.js"></script>
-<script src="scripts/popper.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
+            <div class="row mt-5">
+                <div class="col-md-6 offset-3 bg-darker almost-opaque px-5 pb-5 pt-4 rounded-lg border border-dark">
+
+                    <h3 class="text-center mt-4 text-danger opaque"><b>Sign in to begin registering for tournaments</b>
+                    </h3>
+
+                    <form class="mt-5" action="/signup" method="post" autocomplete="off">
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="email" placeholder="Enter Email" name="email">
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="password" placeholder="Enter Password" name="password">
+                        </div>
+
+                        <button class="btn btn-danger btn-lg px-4 mt-4" type="submit">Sign In</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 </body>
+
 </html>
